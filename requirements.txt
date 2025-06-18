@@ -1,10 +1,9 @@
---extra-index-url https://download.pytorch.org/whl/cpu
-
-numpy<2.0
-torch==2.2.2+cpu
-sentence-transformers
-chromadb
 fastapi
 uvicorn
 python-dotenv
 requests
+sentence-transformers
+chromadb
+beautifulsoup4
+playwright
+pydantic

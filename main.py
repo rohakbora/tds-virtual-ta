@@ -34,6 +34,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+if not os.path.exists("/search_db"):
+    print("📁 No ChromaDB found — setting up knowledge base...")
+    from setup import main as setup_main
+    setup_main()
+
 # Initialize knowledge base
 print("🔧 Initializing knowledge base...")
 try:
